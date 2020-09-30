@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "A command line application that allows the user to create a professional README file that can be used for any project deployed on GitHub.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjbidwell/readme-generator.git"
+  },
+  "author": "Joshua Bidwell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjbidwell/readme-generator/issues"
+  },
+  "homepage": "https://github.com/jjbidwell/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
