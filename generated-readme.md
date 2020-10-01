@@ -20,15 +20,23 @@
 
 
 ## License 
-GNU AGPLv3
+MIT
 
 ## Contributing 
 Here is how you can contribute: 
+  
+  
+## Testing  
+1. test one
+2. test
+3. two
+4. three
+5. five
 
 
 ## Questions
-GitHub Profile: [jjbidwell](https://github.com/jjbidwell)  
-Email: jjbidwell262@gmail.com  
+GitHub Profile: [](https://github.com/)  
+Email:   
 
 Please feel free to contact me via email or through my GitHub profile if you have any questions.
 

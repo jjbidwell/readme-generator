@@ -4,9 +4,12 @@ const inquirer = require('inquirer');
 let installationArray;
 let usageArray;
 let contributionArray;
+let testArray;
 let finalInstallationDirections
 let finalUsageDirections;
 let finalContributions;
+let finalTest;
+
 console.log('Welcome to the README generator. To create a formatted README file to include in your GitHub Project, please answer the following prompts:')
 
 function makeList(array, string, final){
@@ -26,8 +29,10 @@ function makeList(array, string, final){
         finalInstallationDirections = array.join('');
     } else if(final === "usage"){
         finalUsageDirections = array.join('');
-    } else {
+    } else if(final === "contribute"){
         finalContributions = array.join('');
+    } else{
+        finalTest = array.join('');
     }
         
     
@@ -64,6 +69,11 @@ inquirer
         },
         {
             type: "input",
+            message: "List ways your app should be tested, making sure to separate each item with a period.",
+            name: "test"
+        },
+        {
+            type: "input",
             message: "Enter your GitHub username",
             name: "username"
         },
@@ -95,6 +105,7 @@ inquirer
         let { installation } = answers;
         let { usage } = answers;
         let { contributions } = answers;
+        let { test } = answers;
         let { username } = answers;
         let { email } = answers;
         let { license } = answers;
@@ -102,8 +113,8 @@ inquirer
         makeList(installationArray, installation, "install");
         makeList(usageArray, usage, "usage");
         makeList(contributionArray, contributions, "contribute");
-        console.log(finalInstallationDirections);
-        console.log(finalUsageDirections);
+        makeList(testArray, test, "testing");
+
 
 
         let newReadMe = 
@@ -133,7 +144,10 @@ ${license}
 
 ## Contributing 
 Here is how you can contribute: 
-${finalContributions}
+${finalContributions}  
+  
+## Testing  
+${finalTest}
 
 ## Questions
 GitHub Profile: [${username}](https://github.com/${username})  
