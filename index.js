@@ -40,7 +40,7 @@ inquirer
         {
             type: "input",
             message: "Enter your email",
-            name: "Email"
+            name: "email"
         },
         {
             type: "list",
@@ -60,5 +60,24 @@ inquirer
         }
     ])
     .then(answers => {
-        console.log(answers);
+        const { title } = answers;
+        const { description } = answers;
+        const { installationSteps } = answers;
+        const { installationInstructions } = answers;
+        const { usage } = answers;
+        const { username } = answers;
+        const { email } = answers;
+        const { license } = answers;
+
+        console.log(title);
+        console.log(description);
+        console.log(installationSteps);
+        console.log(installationInstructions);
+        console.log(usage);
+        console.log(username);
+        console.log(email);
+        console.log(license);
+
+
+
     })
