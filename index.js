@@ -70,9 +70,9 @@ inquirer
         const { license } = answers;
         console.log(description);
         const newReadMe = 
-        `
-        # ${title}  
+        `# ${title}  
           
+
         ${description}
         `
         fs.writeFile('generated-readme.md', newReadMe, (err) => {
