@@ -1,8 +1,39 @@
 const fs = require("fs");
 const inquirer = require('inquirer');
 
+let installationArray;
+let usageArray;
+let contributionArray;
+let finalInstallationDirections
+let finalUsageDirections;
+let finalContributions;
 console.log('Welcome to the README generator. To create a formatted README file to include in your GitHub Project, please answer the following prompts:')
 
+function makeList(array, string, final){
+    array = string.split('.');
+    for (let i = 0; i < array.length; i++){
+        if(final !== "contribute"){
+            array[i] = (i + 1) + ". " + array[i].trim() + '\n';
+        } else {
+            array[i] = "* " + array[i].trim() + '\n';
+        }
+        if(array[i].length < 5){
+            array.splice(i, 1);
+            i--;
+        }
+    }
+    if(final === "install"){
+        finalInstallationDirections = array.join('');
+    } else if(final === "usage"){
+        finalUsageDirections = array.join('');
+    } else {
+        finalContributions = array.join('');
+    }
+        
+    
+
+
+}
 
 inquirer
     .prompt([
@@ -25,6 +56,11 @@ inquirer
             type: "input",
             message: "Provide instrutions for use, making sure to separate each step with a period.",
             name: "usage"
+        },
+        {
+            type: "input",
+            message: "List ways you would like others to contribute to your project, making sure to separate each item with a period.",
+            name: "contributions"
         },
         {
             type: "input",
@@ -58,16 +94,27 @@ inquirer
         let { description } = answers;
         let { installation } = answers;
         let { usage } = answers;
+        let { contributions } = answers;
         let { username } = answers;
         let { email } = answers;
         let { license } = answers;
-        
-        let installationArray = installation.split('.');
-        for (let i = 0; i < installationArray.length; i++){
-            installationArray[i] = (i + 1) + ". " + installationArray[i].trim() + `\n`;
-        }
-        let finalInstallationDirections = installationArray.join('');
-        console.log(installationArray);
+
+        makeList(installationArray, installation, "install");
+        makeList(usageArray, usage, "usage");
+        makeList(contributionArray, contributions, "contribute");
+        console.log(finalInstallationDirections);
+        console.log(finalUsageDirections);
+        // let installationArray = installation.split('.');
+        // for (let i = 0; i < installationArray.length; i++){
+        //     installationArray[i] = (i + 1) + ". " + installationArray[i].trim() + '\n';
+        //     //console.log(installationArray[i].length)
+        //     if(installationArray[i].length === 4){
+        //         installationArray.splice(i, 1);
+        //         i--;
+        //     }
+        // }
+        // let finalInstallationDirections = installationArray.join('');
+        // console.log(installationArray);
 
         let newReadMe = 
 `# ${title} 
@@ -89,13 +136,14 @@ ${description}
 ${finalInstallationDirections}
 
 ## Usage Directions
-${usage}
+${finalUsageDirections}
 
 ## License 
 ${license}
 
 ## Contributing 
-
+Here is how you can contribute: 
+${finalContributions}
 ## Questions
 GitHub Profile: ${username}  
 Email: ${email}
