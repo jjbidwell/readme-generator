@@ -9,6 +9,7 @@ let finalInstallationDirections
 let finalUsageDirections;
 let finalContributions;
 let finalTest;
+let licenseBadge;
 
 console.log('Welcome to the README generator. To create a formatted README file to include in your GitHub Project, please answer the following prompts:')
 
@@ -91,11 +92,11 @@ inquirer
                 "GNU GPLv3",
                 "GNU LGPLv3",
                 "GNU AGPLv3",
-                "Apache",
+                "Apache 2.0",
                 "ISC",
-                "Boost Software",
+                "Boost 1.0",
                 "The Unlicense",
-                "Mozilla Public License"
+                "Mozilla Public License",
             ]
         }
     ])
@@ -110,15 +111,17 @@ inquirer
         let { email } = answers;
         let { license } = answers;
 
+
         makeList(installationArray, installation, "install");
         makeList(usageArray, usage, "usage");
         makeList(contributionArray, contributions, "contribute");
         makeList(testArray, test, "testing");
+        licenseBadge = `[![License: ${license}](https://img.shields.io/badge/License-${license.replace(' ', '%20')}-yellow.svg)](https://opensource.org/licenses/${license.replace(" ", "-")})`
 
 
-
-        let newReadMe = 
+let newReadMe = 
 `# ${title} 
+${licenseBadge}  
 
 ## Description
 ${description}
@@ -140,7 +143,7 @@ ${finalInstallationDirections}
 ${finalUsageDirections}
 
 ## License 
-${license}
+This app uses ${license}
 
 ## Contributing 
 Here is how you can contribute: 

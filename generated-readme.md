@@ -1,4 +1,5 @@
 #  
+[![License: Boost 1.0](https://img.shields.io/badge/License-Boost%201.0-yellow.svg)](https://opensource.org/licenses/Boost-1.0)  
 
 ## Description
 
@@ -20,18 +21,13 @@
 
 
 ## License 
-MIT
+This app uses Boost 1.0
 
 ## Contributing 
 Here is how you can contribute: 
   
   
 ## Testing  
-1. test one
-2. test
-3. two
-4. three
-5. five
 
 
 ## Questions
