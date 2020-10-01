@@ -1,12 +1,12 @@
-# asfdasdf 
+#  
 
 ## Description
-adsfadsf
+
 
 ## Table of Contents
 1. [Title](#Title)
 2. [Description](#Description)
-3. [Indtallation](#Installation)
+3. [Installation](#Installation)
 4. [Usage Directions](#UsageDirections)
 5. [License](#License)
 6. [Contributing](#Contributing)
@@ -14,39 +14,21 @@ adsfadsf
 
 
 ## Installation
-1. sdfds
-2. dsffsd
-3. sdf
-4. sdf
-5. dfs
-6. sdf
-7. sdf
 
 
 ## Usage Directions
-1. sdfasdg
-2. asdfdg
-3. sd
-4. g
-5. asdg
-6. asdg
-7. dgas
 
 
 ## License 
-MIT
+GNU AGPLv3
 
 ## Contributing 
 Here is how you can contribute: 
-================================
-* asdgasdgasdg
-* adg
-* dg
-* dgsa
-* asdg
-* sdgdgs
+
 
 ## Questions
-GitHub Profile:   
-Email: 
+GitHub Profile: [jjbidwell](https://github.com/jjbidwell)  
+Email: jjbidwell262@gmail.com  
+
+Please feel free to contact me via email or through my GitHub profile if you have any questions.
 

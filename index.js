@@ -104,17 +104,7 @@ inquirer
         makeList(contributionArray, contributions, "contribute");
         console.log(finalInstallationDirections);
         console.log(finalUsageDirections);
-        // let installationArray = installation.split('.');
-        // for (let i = 0; i < installationArray.length; i++){
-        //     installationArray[i] = (i + 1) + ". " + installationArray[i].trim() + '\n';
-        //     //console.log(installationArray[i].length)
-        //     if(installationArray[i].length === 4){
-        //         installationArray.splice(i, 1);
-        //         i--;
-        //     }
-        // }
-        // let finalInstallationDirections = installationArray.join('');
-        // console.log(installationArray);
+
 
         let newReadMe = 
 `# ${title} 
@@ -125,7 +115,7 @@ ${description}
 ## Table of Contents
 1. [Title](#Title)
 2. [Description](#Description)
-3. [Indtallation](#Installation)
+3. [Installation](#Installation)
 4. [Usage Directions](#UsageDirections)
 5. [License](#License)
 6. [Contributing](#Contributing)
@@ -144,9 +134,12 @@ ${license}
 ## Contributing 
 Here is how you can contribute: 
 ${finalContributions}
+
 ## Questions
-GitHub Profile: ${username}  
-Email: ${email}
+GitHub Profile: [${username}](https://github.com/${username})  
+Email: ${email}  
+
+Please feel free to contact me via email or through my GitHub profile if you have any questions.
 
 `
 
