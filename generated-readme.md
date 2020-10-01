@@ -1,8 +1,8 @@
-# Title 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)  
+# Test Project 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 ## Description
-asdlidasi;aadhgio ojasdghidhagihoi oilh agiolhasdgiol hiosdg 
+This project is great. I made it with javascript and it will be to advertise my upcoming wedding. The site also uses super cool and professional HTML and CSS and the timer totally works. 
 
 ## Table of Contents
 1. [Title](#Title)
@@ -15,42 +15,32 @@ asdlidasi;aadhgio ojasdghidhagihoi oilh agiolhasdgiol hiosdg
 
 
 ## Installation
-1. jadhgasihioasdg
-2. asdg
-3. asd
-4. sdg
-5. adg
-6. sdg
-7. sdg
+1. Go to the website
+2. Open the website
+3. Enjoy the website
 
 
 ## Usage Directions
-1. adsghfhbykyi6
-2. dqddtgrjikjtshghujhgfghjgfd
-3. dfhjkjhgfghjhgfghjhgfd
-4. asdfjghfgdf
+1. Look at the website
+2. interact with the website
+3. Click buttons to see cool things
+4. Listen to your favorite music
 
 
 ## License 
-This app uses Attribution 4.0 International
+This app uses MIT
 
 ## Contributing 
 Here is how you can contribute: 
-* ashgreyu5vasrcrv  erg
-* yjyt
+* There are no contributions necessary since the site is perfect
   
   
 ## Testing  
-1. rag567h77
-2. 5t44
-3. 5
-4. 7
-5. tr
-6. f
+1. No testing necessary
 
 
 ## Questions
-GitHub Profile: [jjbidwell262@gmail.com](https://github.com/jjbidwell262@gmail.com)  
+GitHub Profile: [jjbidwell](https://github.com/jjbidwell)  
 Email: jjbidwell262@gmail.com  
 
 Please feel free to contact me via email or through my GitHub profile if you have any questions.

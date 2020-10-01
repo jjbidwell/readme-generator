@@ -88,8 +88,8 @@ inquirer
             message: "What license does your project use?",
             name: "license",
             choices: [
-                "Apache 2.0",
-                "Boost Software Licence 1.0",
+                'Apache 2.0',
+                'Boost Software Licence 1.0',
                 'BSD 3-Clause License',
                 'CC0',
                 'Attribution 4.0 International',
@@ -99,6 +99,7 @@ inquirer
                 'GNU LGPL v3',
                 'GNU FDL v1.3',
                 'IBM Public License Version 1.0',
+                'ISC License',
                 'MIT',
                 'Mozilla Public License 2.0'
             ]
@@ -152,6 +153,9 @@ inquirer
             case "GNU FDL v1.3":
             licenseBadge = "[![License: FDL 1.3](https://img.shields.io/badge/License-FDL%20v1.3-blue.svg)](https://www.gnu.org/licenses/fdl-1.3)";        
             break;
+            case "ISC License":
+            licenseBadge = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)";        
+            break;
             case "IBM Public License Version 1.0":
             licenseBadge = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)";        
             break;
@@ -162,6 +166,7 @@ inquirer
             licenseBadge = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";        
             break;
             }
+
 let newReadMe = 
 `# ${title} 
 ${licenseBadge}  
