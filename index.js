@@ -1,5 +1,5 @@
-var fs = require("fs");
-var inquirer = require('inquirer');
+const fs = require("fs");
+const inquirer = require('inquirer');
 
 console.log('Welcome to the README generator. To create a formatted README file to include in your GitHub Project, please answer the following prompts:')
 
@@ -14,7 +14,7 @@ inquirer
         {
             type: "input",
             message: "Write a brief description of our project.",
-            name: "desription"
+            name: "description"
         },
         {
             type: "number",
@@ -68,16 +68,18 @@ inquirer
         const { username } = answers;
         const { email } = answers;
         const { license } = answers;
-
-        console.log(title);
         console.log(description);
-        console.log(installationSteps);
-        console.log(installationInstructions);
-        console.log(usage);
-        console.log(username);
-        console.log(email);
-        console.log(license);
+        const newReadMe = 
+        `
+        # ${title}  
+          
+        ${description}
+        `
+        fs.writeFile('generated-readme.md', newReadMe, (err) => {
+            if (err) throw err;
+            console.log('SAVED');
+        })
 
-
-
+    }).catch((err) => {
+        console.log(err);
     })
