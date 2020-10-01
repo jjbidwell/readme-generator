@@ -17,15 +17,9 @@ inquirer
             name: "description"
         },
         {
-            type: "number",
-            message: "How many steps does a user have to take to install your project?",
-            name: "installationSteps"
-
-        },
-        {
             type: "input",
             message: "Write steps on how a user installs your project, making sure to separate each step with a period.",
-            name: "installationInstructions"
+            name: "installation"
         },
         {
             type: "input",
@@ -60,17 +54,22 @@ inquirer
         }
     ])
     .then(answers => {
-        const { title } = answers;
-        const { description } = answers;
-        const { installationSteps } = answers;
-        const { installationInstructions } = answers;
-        const { usage } = answers;
-        const { username } = answers;
-        const { email } = answers;
-        const { license } = answers;
-        console.log(description);
+        let { title } = answers;
+        let { description } = answers;
+        let { installation } = answers;
+        let { usage } = answers;
+        let { username } = answers;
+        let { email } = answers;
+        let { license } = answers;
+        
+        let installationArray = installation.split('.');
+        for (let i = 0; i < installationArray.length; i++){
+            installationArray[i] = (i + 1) + ". " + installationArray[i].trim() + `\n`;
+        }
+        let finalInstallationDirections = installationArray.join('');
+        console.log(installationArray);
 
-        const newReadMe = 
+        let newReadMe = 
 `# ${title} 
 
 ## Description
@@ -87,7 +86,7 @@ ${description}
 
 
 ## Installation
-${installationInstructions}
+${finalInstallationDirections}
 
 ## Usage Directions
 ${usage}

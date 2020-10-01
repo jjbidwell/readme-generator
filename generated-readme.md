@@ -1,7 +1,7 @@
-# Test Title 
+#  
 
 ## Description
-This is a description. It desribes my project very well and will get me a good grade.
+
 
 ## Table of Contents
 1. [Title](#Title)
@@ -14,17 +14,22 @@ This is a description. It desribes my project very well and will get me a good g
 
 
 ## Installation
-These are the steps of the program. Step one. Step Two.
+1. one
+2. two
+3. three
+4. four
+5. five
+
 
 ## Usage Directions
-Step one. Step two.
+
 
 ## License 
-GNU AGPLv3
+MIT
 
 ## Contributing 
 
 ## Questions
-GitHub Profile: jjbidwell  
-Email: jjbidwell262@gmail.con
+GitHub Profile:   
+Email: 
 
