@@ -69,12 +69,40 @@ inquirer
         const { email } = answers;
         const { license } = answers;
         console.log(description);
-        const newReadMe = 
-        `# ${title}  
-          
 
-        ${description}
-        `
+        const newReadMe = 
+`# ${title} 
+
+## Description
+${description}
+
+## Table of Contents
+1. [Title](#Title)
+2. [Description](#Description)
+3. [Indtallation](#Installation)
+4. [Usage Directions](#UsageDirections)
+5. [License](#License)
+6. [Contributing](#Contributing)
+7. [Questions](#Questions)
+
+
+## Installation
+${installationInstructions}
+
+## Usage Directions
+${usage}
+
+## License 
+${license}
+
+## Contributing 
+
+## Questions
+GitHub Profile: ${username}  
+Email: ${email}
+
+`
+
         fs.writeFile('generated-readme.md', newReadMe, (err) => {
             if (err) throw err;
             console.log('SAVED');
