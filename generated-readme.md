@@ -1,5 +1,5 @@
 #  
-[![License: Boost 1.0](https://img.shields.io/badge/License-Boost%201.0-yellow.svg)](https://opensource.org/licenses/Boost-1.0)  
+[![License: GNU AGPLv3](https://img.shields.io/badge/License-GNU%20AGPLv3-red.svg)](https://opensource.org/licenses/GNU-AGPLv3)  
 
 ## Description
 
@@ -21,7 +21,7 @@
 
 
 ## License 
-This app uses Boost 1.0
+This app uses GNU AGPLv3
 
 ## Contributing 
 Here is how you can contribute: 

@@ -116,7 +116,7 @@ inquirer
         makeList(usageArray, usage, "usage");
         makeList(contributionArray, contributions, "contribute");
         makeList(testArray, test, "testing");
-        licenseBadge = `[![License: ${license}](https://img.shields.io/badge/License-${license.replace(' ', '%20')}-yellow.svg)](https://opensource.org/licenses/${license.replace(" ", "-")})`
+        licenseBadge = `[![License: ${license}](https://img.shields.io/badge/License-${license.replace(' ', '%20')}-red.svg)](https://opensource.org/licenses/${license.replace(" ", "-")})`
 
 
 let newReadMe = 
