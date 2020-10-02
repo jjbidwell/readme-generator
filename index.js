@@ -142,7 +142,7 @@ inquirer
             licenseBadge = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)";        
             break;
             case "GNU GPL v3":
-            licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0";        
+            licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";        
             break;
             case "GNU AGPL v3":
             licenseBadge = "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";        
@@ -175,13 +175,13 @@ ${licenseBadge}
 ${description}
 
 ## Table of Contents
-1. [Title](#Title)
-2. [Description](#Description)
-3. [Installation](#Installation)
-4. [Usage Directions](#UsageDirections)
-5. [License](#License)
-6. [Contributing](#Contributing)
-7. [Questions](#Questions)
+
+1. [Description](#Description)
+2. [Installation](#Installation)
+3. [Usage Directions](#UsageDirections)
+4. [License](#License)
+5. [Contributing](#Contributing)
+6. [Questions](#Questions)
 
 
 ## Installation
