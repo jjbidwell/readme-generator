@@ -18,6 +18,7 @@ The program also breaks down sections with multiple steps or options into a list
 
 Github repository: https://github.com/jjbidwell/readme-generator  
 Video instruction: https://drive.google.com/file/d/1js8tgiBhtcen4_HBqlkrsMb1AULOtZAw/view?usp=sharing
+Sample Generated README: https://github.com/jjbidwell/readme-generator/blob/master/generated-readme.md
 
 
 ## Screenshots  
